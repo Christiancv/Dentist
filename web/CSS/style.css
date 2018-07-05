@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 4, 2018, 4:57:51 PM
+    Author     : ccami
+*/
+
+.navbar2{
+    
+    width: 100%;
+    padding:0;
+}
+.bg {
+    
+    background-image: url("https://images.unsplash.com/photo-1486049252259-45184399c5b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7b20ab6b8d2081dc48971a3e67db67d&auto=format&fit=crop&w=1950&q=80");
+    height: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+}
+
+.profile{
+    background-image: url("https://images.unsplash.com/photo-1445527815219-ecbfec67492e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e17494810356ddcbd6ceac1eba122960&auto=format&fit=crop&w=1950&q=80");
+    height: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+
+}
+
+.float{
+    float:right;
+}
+
+
+.wrap
+{
+    
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+p.form-title
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #33ccff;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form
+{
+    width: 250px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: black;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+
+
+form.login .forgot-pass-content
+{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form.login label, form.login a
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+form.login a
+{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover
+{
+    color: #2ecc71;
+}
+
+.pr-wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+
+
+
+
+
+
