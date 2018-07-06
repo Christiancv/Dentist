@@ -50,7 +50,7 @@
                             <td><%out.println(p1.getPatPw());%></td>
                           </tr>  
                           <tr>
-                            <td>First name</td>
+                            <td>First name:</td>
                             <td><%out.println(p1.getPatfn());%></td>
                           </tr>
                           <tr>
@@ -66,14 +66,14 @@
                             <td><%out.println(p1.getPatemail());%></td>
                           </tr>
                           <tr>
-                            <td>Insurance</td>
+                            <td>Insurance:</td>
                             <td><%out.println(p1.getPatinsco());%></td>
                           </tr>
                         </tbody>
                       </table>
                       <div style="padding-left:29%;">
-                      <a href="#" class="btn btn-primary">Appointments</a>
-                      <a href="#" class="btn btn-primary">Edit Profile</a>
+                      <a href="Appointments.jsp" class="btn btn-primary">Appointments</a>
+                      <a href="EditProfile.jsp" class="btn btn-primary">Edit Profile</a>
                       </div>
                     </div>
                   </div>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : View
-    Created on : Jul 4, 2018, 11:14:26 PM
-    Author     : ccami
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="Dentist.Patient"%>
 
@@ -44,37 +38,38 @@
                   <div class="row">
                     <div class=" col-md-12 col-lg-12 "> 
                       <table class="table table-user-information" >
-                        <tbody align="center">
+                       <form  autocomplete="off" Action="http://localhost:8084/Dentist/EditProfileServlet" method="post">
+                        <tbody align="center" >
                           <tr>
                             <td>Password:</td>
-                            <td><%out.println(p1.getPatPw());%></td>
+                            <td><input style="border:0px;" type="text" name="Password" placeholder="<%out.println("         Enter new password");%>"></td>
                           </tr>  
                           <tr>
                             <td>First name:</td>
-                            <td><%out.println(p1.getPatfn());%></td>
+                            <td><%out.println(p1.getPatfn());%></td></td>
                           </tr>
                           <tr>
                             <td>Last name:</td>
-                            <td><%out.println(p1.getPatln());%></td>
+                            <td><%out.println(p1.getPatln());%></td></td>
                           </tr>
                           <tr>
                             <td>Address:</td>
-                            <td><%out.println(p1.getPataddr());%></td>
+                            <td><input  style="border:0px;" type="text" name="Address" placeholder="<%out.println("           Enter new Address ");%>"></td>
                           </tr>
                           <tr>
                             <td>Email:</td>
-                            <td><%out.println(p1.getPatemail());%></td>
+                            <td><input style="border:0px;" type="text" name="Email" placeholder="<%out.println("             Enter new Email ");%>"></td>
                           </tr>
                           <tr>
                             <td>Insurance:</td>
-                            <td><%out.println(p1.getPatinsco());%></td>
+                            <td><input style="border:0px;" type="text" name="Insurance" placeholder="<%out.println("          Enter new Insurance ");%>"></td>
                           </tr>
                         </tbody>
+                        <div style="float:right; padding:10px; ">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                       </form>
                       </table>
-                      <div style="padding-left:29%;">
-                      <a href="Appointments.jsp" class="btn btn-primary">Appointments</a>
-                      <a href="EditProfile.jsp" class="btn btn-primary">Edit Profile</a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -82,5 +77,12 @@
             </div>
           </div>
     </div>
+      <%
+          HttpSession ses = request.getSession(true);
+          ses.setAttribute("p1", p1);
+          System.out.println("Patient Added to Session");
+    
+      
+      %>                     
     </body>
 </html>
