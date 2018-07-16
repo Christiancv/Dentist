@@ -23,7 +23,7 @@
         <nav class=" navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Dentist</a>
+                  <a class="navbar-brand" href="#">Patient</a>
                 </div>
                 <ul class="nav navbar-nav float">
                   <li class=""><a href="#">Home</a></li>
@@ -41,7 +41,8 @@
                 <form class="login" autocomplete="off" Action="http://localhost:8084/Dentist/LoginServlet" method="post">
                 <input type="text" placeholder="Username" name="Username" />
                 <input type="password" placeholder="Password" name="Password" />
-                <input type="submit" value="Sign In" class="btn btn-primary btn-sm" />              
+                <input type="submit" value="Sign In" class="btn btn-primary btn-sm" />  
+                <p align="center"><a style="color:green;" href="DentistLogin.jsp">Dentist login here</a></p>
                 </form>
             </div>
         </div>

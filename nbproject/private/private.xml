@@ -3,12 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/AppointmentServlet.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/MakeAppointment.jsp</file>
             <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/loginError.jsp</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/index.jsp</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/Patient.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/EditProfile.jsp</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/ConnectionManager.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/EditAppointmentServlet.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/Appointments.jsp</file>
             <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/LoginServlet.java</file>
             <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/CSS/style.css</file>
-            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/Patient.java</file>
-            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/web/View.jsp</file>
-            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/ConnectionManager.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/EditProfileServlet.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/MakeAppointmentServlet.java</file>
+            <file>file:/C:/Users/ccami/Documents/NetBeansProjects/Dentist/src/java/Dentist/Appointment.java</file>
         </group>
     </open-files>
 </project-private>

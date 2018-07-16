@@ -25,10 +25,10 @@
       <nav class=" navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Dentist</a>
+                  <a class="navbar-brand" href="#">Patient</a>
                 </div>
                 <ul class="nav navbar-nav float">
-                  <li class=""><a href="#">Profile</a></li>
+                  <li class=""><a href="index.jsp">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -71,9 +71,13 @@
                           </tr>
                         </tbody>
                       </table>
-                      <div style="padding-left:29%;">
-                      <a href="Appointments.jsp" class="btn btn-primary">Appointments</a>
-                      <a href="EditProfile.jsp" class="btn btn-primary">Edit Profile</a>
+                      <div>
+                        <form action="http://localhost:8084/Dentist/AppointmentServlet" method="post">
+                            <Button class="btn btn-primary">Appointments</button>
+                            <a href="EditProfile.jsp" class="btn btn-primary">Edit Profile</a>
+                        </form>
+                      
+                      
                       </div>
                     </div>
                   </div>
@@ -82,5 +86,10 @@
             </div>
           </div>
     </div>
+     <%
+         HttpSession ses = request.getSession(true);
+         ses.setAttribute("p1", p1);
+         System.out.println("Patient Added to Session");
+    %>
     </body>
 </html>

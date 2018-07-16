@@ -48,10 +48,13 @@ public class LoginServlet extends HttpServlet {
             p1.selectDB(id);
             p1.Display();
             
+            
+            //send Patient to session
             HttpSession session = request.getSession(true);
             session.setAttribute("p1", p1);
-            System.out.println("Customer Added to the session");
+            System.out.println("Patient Added to the session");
             
+            //if log in correct the send the user to the corresponding page else error page
             if(pw.equals(p1.getPatPw())){
                 RequestDispatcher rd = request.getRequestDispatcher("/View.jsp");
                 rd.forward(request, response);

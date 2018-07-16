@@ -19,6 +19,7 @@ import java.util.logging.Logger;
 
 public class Patient {
     
+    // declare patient information
     private String PatID;
     private String PatPw;
     private String PatFirstName;
@@ -27,6 +28,8 @@ public class Patient {
     private String PatEmail;
     private String PatInsCo;
     
+    
+    //constructors 
     public Patient(){
         PatID = " ";
         PatPw = " ";
@@ -48,6 +51,7 @@ public class Patient {
         PatInsCo = patinsco;
     }
     
+    //setter and getters
     public String getPatID(){
         return PatID;
     }
@@ -105,6 +109,7 @@ public class Patient {
         PatInsCo = insurance;
     }
     
+    //select patient information from database
     public void selectDB(String id) throws SQLException{
         
         Connection con = null;
@@ -115,7 +120,8 @@ public class Patient {
         con = ConnectionManager.MyConnection();
         stmt = con.createStatement();
         System.out.println("Accessing Database...");
-        sql = "select * from Patients" +
+        sql = "select patId, passwd, firstName, lastName, addr, email, insCo " +               
+                "from Patients" +
                 " where patId = " + "'" +id+"'";
         rs = stmt.executeQuery(sql);
         
@@ -134,7 +140,7 @@ public class Patient {
     
     }
     
-    
+    //insert new patient
     public void insertDB(String id, String pw, String fn, String ln, String add, String email, String insurance) throws SQLException{
         
         Connection con = null;
@@ -161,7 +167,7 @@ public class Patient {
     
     }
     
-    
+    //delete patient 
     public void deleteDB() throws SQLException{
         Connection con = null;
         Statement stmt = null;
@@ -186,6 +192,7 @@ public class Patient {
     
     }
     
+    //update information about patient 
     public void updateDB() throws SQLException{
         Connection con = null;
         Statement stmt = null;
@@ -212,6 +219,8 @@ public class Patient {
     
     }
     
+    
+    //display patient information
     public void Display(){
  
         System.out.println("--------------------------------");

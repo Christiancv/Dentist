@@ -42,18 +42,21 @@ public class EditProfileServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             System.out.println("starting servlet");
+            
+            //get Patient from session
             HttpSession session = request.getSession(true);
             Patient p1 = new Patient();
             p1 = (Patient)session.getAttribute("p1");
             p1.Display();
             
             
-            
+            //get parameters from the textboxes 
             String password = request.getParameter("Password");
             String address = request.getParameter("Address");
             String email = request.getParameter("Email");
             String insurance = request.getParameter("Insurance");
             
+            //if fields are empty only update the filled fields 
             if(password != null && !password.isEmpty()){p1.setPatPw(password);}
             if(address != null && !address.isEmpty()){p1.setPataddr(address);}
             if(email != null && !email.isEmpty()){p1.setPatemail(email);}

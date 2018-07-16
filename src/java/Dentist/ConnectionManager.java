@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class ConnectionManager {
     
     
-    
+    // Connects to the database
     private static Connection con;
     private static String url = "jdbc:ucanaccess://C://Users//ccami//Documents//NetBeansProjects//Dentist//DentistOfficeACCDB.accdb";
     private static String driverName = "net.ucanaccess.jdbc.UcanaccessDriver";

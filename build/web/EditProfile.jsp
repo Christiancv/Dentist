@@ -19,10 +19,10 @@
       <nav class=" navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Dentist</a>
+                  <a class="navbar-brand" href="#">Patient</a>
                 </div>
                 <ul class="nav navbar-nav float">
-                  <li class=""><a href="#">Profile</a></li>
+                  <li class=""><a href="index.jsp">Logout</a></li>
                 </ul>
             </div>
         </nav>
